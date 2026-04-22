@@ -7,64 +7,90 @@
     <title>Maicon</title>
 </head>
 
-<body>
-    <header>
-        <h1>Maicon Santos</h1>
+<body <header>
+    <h1>Maicon Santos</h1>
 
-        <nav> <!- seção de navegação do site -->
-                <ul> <!- lista de itens de navegação -->
-                        <li><a href="#sobre">sobre mim</a></li>
-                        <li><a href="#projetos">projetos</a></li>
-                        <li><a href="#contato">contato</a></li>
+    <nav> <!- seção de navegação do site -->
+            <ul> <!- lista de itens de navegação -->
+                    <li><a href="#sobre">sobre mim</a></li>
+                    <li><a href="#projetos">projetos</a></li>
+                    <li><a href="#contato">contato</a></li>
 
-                </ul>
-        </nav>
+            </ul>
+    </nav>
     </header>
     <section id="sobre">
         <h2>Sobre mim</h2>
         <img src="imagen teste.png" width="200" alt="Foto de Maicon Santos" title="Maicon Santos">
-            <article>
-                <p>Olá, meu nome é Maicon Santos e sou um desenvolvedor de software apaixonado por criar soluções
-                    inovadoras. Com experiência em diversas linguagens de programação, estou sempre em busca de novos
-                    desafios para aprimorar minhas habilidades e contribuir para projetos significativos.
+        <article>
+            <p>Olá, meu nome é Maicon Santos e sou um desenvolvedor de software apaixonado por criar soluções
+                inovadoras. Com experiência em diversas linguagens de programação, estou sempre em busca de novos
+                desafios para aprimorar minhas habilidades e contribuir para projetos significativos.
 
-                </p>
-            </article>
-            <aside>
-                <h3>Habilidades</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-</aside>
-            
+            </p>
+        </article>
+        <aside>
+            <h3>Habilidades</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </aside>
+
     </section>
     <section id="projetos">
         <h2>Projetos</h2>
 
-    <article>
-        <h3>portifólio</h3>
-        <p> 
-               Este é meu primeiro projeto, de muitos que viram, não entendo nada de programação ainda mais irei me dedicar ao máximo para aprender, por enquanto é isso continuem me acompanhando.
-        </p>
-    </article>
-        
+        <article>
+            <h3>portifólio</h3>
+            <p>
+                Este é meu primeiro projeto, de muitos que viram, não entendo nada de programação ainda mais irei me
+                dedicar ao máximo para aprender, por enquanto é isso continuem me acompanhando.
+            </p>
+        </article>
+
     </section>
     <footer>
         <p>Direitos reservados a Maicon Santos</p>
 
         <section id="contato">
-            
+
             <h2>Contato</h2>
 
             <p>Para resolver dúvidas entre em contato</p>
 
-            <address>
-                E-mail: <a href="mailto:maicondds1999@gmail.com">maicondds1999@gmail.com</a> <br>
-                Telefone: <a href="tel:(47) 9716-1697">(47) 9716-1697</a>
+            <form action=""></form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required><br>
 
-            </address>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+            ><label for="assunto">Assunto:</label>
+
+            <select name="assunto" id="assunto"><br>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="outro">Outro</option>
+
+            </select>
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="3" cols="20" required></textarea><br>
+
+            <input type='checkbox' id="inscricao" name="inscricao">
+
+               <label for="inscricao">Desejo receber novidades por email.</label>
+
+               <br>
+
+               <input type="submit" value="Enviar mensagem">
+
+
+
         </section>
     </footer>
 </body>
